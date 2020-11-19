@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script>
+  var SESSION_START = Date.now();
+  var BROWSER_DETAILS = {"name":"Safari","version":"13.0","osName":"macOS","osVersion":"10.14.6"};
+  var BROWSER_WHITELISTED = true;
+  var IS_MOBILE = false;
+  var RECOMMEND_ASM = true;
+  var STATIC_DIR = '/prod/2019-09-27--14-40-35--f66c624/static';
+  var VERSION = '2019-09-27--14-40-35--f66c624';
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N3VX5D');</script>
+<!-- End Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="google-site-verification" content="5-RVJaN94CeM2jYsdIwhQW1lrlhldo_2cDps2htdO5o" />
+
+<link rel='manifest' href='/manifest'>
+<link rel="stylesheet" type="text/css" href="/prod/2019-09-27--14-40-35--f66c624/static/css/sketchup.css">
+<link rel="shortcut icon" href="/static/images/web/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon-precomposed" href="/static/images/web/sketchup-logo-precomposed.png">
+<link href="https://fonts.googleapis.com/css?family=Muli:400,600|Roboto&display=swap&subset=latin-ext" rel="stylesheet">
+<title>SketchUp</title>
+<meta name="description" content="Draw, orbit, push-pull: make anything you can imagine in SketchUp, anytime you imagine it." />
+<meta charset=utf-8 />
+<meta name="theme-color" content="#f9f9fb" />
+
+<style>
+
+.loading-container {
+  align-content: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 701;
+}
+
+.loading-container .image-container {
+  text-align: center;
+}
+
+.loading-content-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.su-logo {
+  height: 30%;
+}
+
+.loading-animation-message {
+  font-size: 18px;
+  font-family: Open Sans;
+}
+
+.su-logo.animation {
+  animation: pulse 1500ms infinite ease-in-out forwards;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+</style>
+
+</head>
+
+<body draggable="false">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3VX5D"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div class="toolbar-container">
+  </div>
+  <img class="pseudo-cursor disabled" src="/static/images/web/sketchup_logo.svg"/>
+  <!-- Tabindex is required to make the canvas focusable. -->
+  <div id="main-canvas-wrapper">
+    <canvas tabindex="0" id="canvas" class="printable"
+        oncontextmenu="event.preventDefault()"></canvas>
+  </div>
+  <div draggable="false" id="loading-container" class="loading-container">
+    <div class="loading-content-wrapper">
+      <img class="su-logo animation" id="loading-image" src="/static/images/web/sketchup_logo.svg" />
+      <div class="loading-animation-message"></div>
+    </div>
+  </div>
+
+  <div class="fullscreen-loading-bar">
+    <progress id="fullscreen-progress-bar"
+        style="display:none" max="100" value="0">
+    </progress>
+  </div>
+
+  <script type="text/javascript" src="/prod/2019-09-27--14-40-35--f66c624/static/sketchup-closure-lib.js"></script>
+  <script type="text/javascript" src="/prod/2019-09-27--14-40-35--f66c624/static/lib/soyutils.js"></script>
+
+  <script type="text/javascript" src="/prod/2019-09-27--14-40-35--f66c624/static/runtime.js"></script>
+  <script type="text/javascript" src="/prod/2019-09-27--14-40-35--f66c624/static/vendor.js"></script>
+  <script type="text/javascript" src="/prod/2019-09-27--14-40-35--f66c624/static/common.js"></script>
+  <script type="text/javascript" src="/prod/2019-09-27--14-40-35--f66c624/static/init.js"></script>
+
+</body>
+</html>
